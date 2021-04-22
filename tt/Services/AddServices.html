@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="title" content="household services in Hyderabad, classified ads in Hyderabad, Real Estate in Hyderabad, Cabs in Hyderabad,Carpenter in Hyderabad,Plumber in hyderabad and many more services....">
+    <meta name="description" content="Ramukaka is a service oriented company providing assistance for day to day household services. Currently in Hyderabad only.">
+    <meta name="keywords" content="Ramukaka,cab services,Real Estate ,household services,household chores, A/C Repair , A/C Shifting , A/C Wiring , Accountants , Air Ticketing , Animal Doctor , Baby Sitter , Bike Insurance , Bike Rentals , Birth Certificate , Bus Ticketing , Cab Services , Car Insurance , Car Rentals , Catering , CCTV , Classifieds , Computer , Cool Roof Paint , Cooler , Curtain Rods Installation , Death Certificate , Dish Tv Installation , Dishwasher , Dog Food Suppliers , Dog Trainers , Drivers , Elderly Care , Epbx , Event Management , Fan , Firm Registration , Fridge , Furniture , Furniture Repair , Gardeners , Gas Stove , Geaser , Generators , Generators On Rent , Grocery , House Cleaning , House Tax , Insurance Policy , Inverters , Inverter Wiring , It Returns , Labour Licence , Loans , Marketing Staff , Mixer , Mosquito Nets , Office Boy , Oven , Packers & Movers , Pan Card , Passports Agents , Pest Control , Pffilling , Physiotherapist , Plumbing , Power Backups , Printer , Property Documentation Check , Rto Works , Secondhand Laptops , Security Guard , Septic Tank Cleaner , Software Installation , Tele Callers , Temporary Cook , Temporary Drivers , Temporary Staff , Tiles In Bathroom , To-Let , Towing Services , Train Ticketing , Tv , Vacuum Cleaners , Washing Machine , Water Heater , Water Pump , Water Purifier , Water Tank Cleaners , White Washing ,house keeping">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ramukaka Add Services</title>
+    <!-- Bootstrap -->
+    <link href="../Assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../Assets/css/style.css" rel="stylesheet">
+    <link href="../Assets/css/animate.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../Assets/images/favicon1.ico" type="image/x-icon">
+    <link rel="icon" href="../Assets/images/favicon1.ico" type="image/x-icon">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+
+    <![endif]-->
+
+</head>
+<hr class="first-hr">
+<body class="bodybackcolor">
+<div class="container containerbackcolor" >
+<div style="padding-top: 5px">
+    <div class="hidden-xs"> <!-- Header -->
+        <a href="http://ramukaka.com"><img src="../Assets/images/logo.png" class="logo" /></a>
+        <ul class="nav nav-pills" style="padding-top: 25px;float:right">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Aboutus.html">About Us</a></li>
+            <li><a href="../Services.html">Services</a></li>
+            <li><a href="../Recommend.html">Recommend</a></li>
+            <li><a href="../ContactUs.html">Contact Us</a></li>
+        </ul>
+        <hr class="custom-hr" style="margin-top: 20px;" />
+    </div>
+</div>
+<div class="visible-xs"> <!-- Header -->
+    <a href="http://ramukaka.com"><img src="../Assets/images/logo.png" class="logo" /></a>
+    <ul class="nav nav-pills" style="padding-top: 25px">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Aboutus.html">About Us</a></li>
+        <li><a href="../Services.html">Services</a></li>
+        <li><a href="../Recommend.html">Recommend</a></li>
+        <li><a href="../ContactUs.html">Contact Us</a></li>
+    </ul>
+    <hr class="custom-hr" style="margin-top: 20px;"/>
+</div>
+
+<div class="body-border">
+<div class="row">
+       <div class="col-md-3 animated slideInLeft">
+           <img style="padding: 20px;" src="../Assets/images/ServiceProvider.png">
+       </div>
+<div class="col-md-8 col-md-offset-1 animated slideInRight">
+    <h3 class="privacy-header" style="border-top-left-radius: 5px; border-top-right-radius: 5px;
+					border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+        <span class="srhntfnd">Service Provider Form</span>
+    </h3><br/>
+    <form  role="form" action="PHPCode/addServices.php" method="POST" enctype="multipart/form-data">
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label for="name">
+                   Business Name / Service Provider Name
+                </label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="city">
+                    City
+                </label>
+                <input type="text" class="form-control" name="city" id="city" placeholder="Enter name of city Eg: Hyderabad" required>
+            </div>
+
+
+            <div class="form-group" id="TextBoxesGroup" >
+
+                <div id="TextBoxDiv1">
+                <label for="exampleInputEmail1">
+                    Email Id
+                </label>
+
+                <input type="email" class="form-control" name="email" id="exampleInputEmail1" placeholder="Enter email">          </div>
+            </div>
+
+
+            <div>
+                <button type="button" id="addButton" class="btn btn-info">
+                    Add Email
+                </button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="button" id="removeButton" class="btn btn-danger">
+                    Remove Email
+                </button>
+                <br><br>
+            </div>
+
+
+        </div>
+
+        <div class="col-md-6 ">
+            <div class="form-group">
+                <label for="addservices">
+                    Service Type
+                </label>
+                <input type="text" class="form-control" name="services" id="addservices" placeholder="Add multiple services. Eg: Loans, Cabs, Drivers" required>
+            </div>
+            <div class="form-group">
+                <label for="location">
+                    Location
+                </label>
+                <input type="text" class="form-control" name="location" id="location" placeholder="Enter location Eg : Afzalgunj" required>
+            </div>
+
+            <div class="form-group" id="aTextBoxesGroup">
+                <div id="aTextBoxDiv1">
+                <label for="mobile">
+                    Mobile No
+                </label>
+                <input type="text" class="form-control" name="mobile" id="mobile" onchange="validatephone(this);"
+                       placeholder="Enter 10 digit mobile no " required>
+            </div>
+            </div>
+            <div>
+                <button type="button" id="addButton1" class="btn btn-info">
+                    Add Mobile No
+                </button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="button" id="removeButton1" class="btn btn-danger">
+                    Remove Mobile No
+                </button>
+                <br><br>
+            </div>
+
+             </div>
+
+           <div class="row">
+               <div class="col-md-10 col-md-offset-1">
+                   <div class="form-group">
+                       <div class="form-group">
+                           <label for="address">
+                               Business Address
+                           </label>
+                           <textarea class="form-control" rows="3" name="address" id="address" placeholder="Enter business address"></textarea>
+                       </div>
+
+                       <label for="uploadphoto">
+                           Upload Photo (Format should be .jpg or .png or .jpeg)
+                       </label>
+                       <input type="file" class="form-control" name="uploadphoto" id="uploadphoto">
+                   </div>
+               </div>
+
+
+
+           </div>
+        <div class="row">
+
+            <div class="col-md-5 col-md-offset-3">
+
+
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="checkbox" required>
+                            I agree to the terms and conditions.
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit" class="btn btn-info">
+                        Submit
+                    </button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="reset" class="btn btn-default">
+                        Reset
+                    </button>
+                    <br><br>
+                </div>
+
+            </div>
+        </div>
+
+    </form>
+</div>
+
+
+</div>
+
+</div>
+<!-- footer -->
+<hr class="custom-hr"/>
+<div class="footer">
+    <div class="row">
+        <div class="col-md-12" style="text-align:center;">
+            <h3>Services Offered</h3>
+        </div>
+    </div>
+    <div class="row" style="text-align:left;">
+        <div class="col-md-2">
+            <ul>
+                <li><a href="../ACrepair/index.html">AC repair</a></li>
+                <li><a href="../Accountants/index.html">Accountants</a></li>
+                <li><a href="../Babysitter/index.html">Baby sitter</a></li>
+                <li><a href="../BikeInsurance/index.html">Bike Insurance</a></li>
+                <li><a href="../Cabs/index.html">Cabs</a></li>
+                <li><a href="../CarInsurance/index.html">Car Insurance</a></li>
+                <li><a href="../Classifieds/index.html">Classifieds</a></li>
+                <li><a href="../CoolRoofPaint/index.html">Cool Roof Paint</a></li>
+
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <ul>
+                <li><a href="../DishtvInstallation/index.html">Dish tv Installation</a></li>
+                <li><a href="../Dishwasher/index.html">Dishwasher</a></li>
+                <li><a href="../TemporaryDrivers/index.html">Temporary Drivers</a></li>
+                <li><a href="../PermanentDrivers/index.html">Permanent Drivers</a></li>
+                <li><a href="../ElderlyCare/index.html">Elderly Care</a></li>
+                <li><a href="../FurnitureRepair/index.html">Furniture Repair</a></li>
+                <li><a href="../Gardeners/index.html">Gardeners</a></li>
+                <li><a href="../GeneratorsOnRent/index.html">Generators On Rent</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <ul>
+                <li><a href="../Grocery/index.html">Grocery</a></li>
+                <li><a href="../HouseCleaning/index.html">House Cleaning</a></li>
+                <li><a href="../HouseTax/index.html">House Tax</a></li>
+                <li><a href="../InsurancePolicy/index.html">Insurance Policy</a></li>
+                <li><a href="../InverterWiring/index.html">Inverter Wiring</a></li>
+                <li><a href="../ITreturns/index.html">IT returns</a></li>
+                <li><a href="../LabourLicence/index.html">Labour Licence</a></li>
+                <li><a href="../SoftwareInstallation/index.html">Software Installation</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <ul>
+                <li><a href="../MosquitoNets/index.html">Mosquito Nets</a></li>
+                <li><a href="../OfficeBoy/index.html">Office Boy</a></li>
+                <li><a href="../PackersandMovers/index.html">Packers and Movers</a></li>
+                <li><a href="../PestControl/index.html">Pest Control</a></li>
+                <li><a href="../Physiotherapist/index.html">Physiotherapist</a></li>
+                <li><a href="../Plumbing/index.html">Plumbing</a></li>
+                <li><a href="../PowerBackups/index.html">Power Backups</a></li>
+                <li><a href="../SecondhandLaptops/index.html">Secondhand Laptops</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <ul>
+                <li><a href="../Loans/index.html">Loans</a></li>
+                <li><a href="../MarketingStaff/index.html">Marketing Staff</a></li>
+                <li><a href="../Printer/index.html">Printer</a></li>
+                <li><a href="../RealEstate/index.html">Real Estate</a></li>
+                <li><a href="../SecurityGuard/index.html">Security Guard</a></li>
+                <li><a href="../SeptictankCleaner/index.html">Septic tank Cleaner</a></li>
+                <li><a href="../TemporaryCook/index.html">Temporary Cook</a></li>
+                <li><a href="../WatertankCleaners/index.html">Watertank Cleaners</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2">
+            <ul>
+
+                <li><a href="../TemporaryStaff/index.html">Temporary Staff</a></li>
+                <li><a href="../TowingServices/index.html">Towing Services</a></li>
+                <li><a href="../WashingMachine/index.html">Washing Machine</a></li>
+                <li><a href="../WaterHeater/index.html">Water Heater</a></li>
+                <li><a href="../WaterPump/index.html">Water Pump</a></li>
+                <li><a href="../WaterPurifier/index.html">Water Purifier</a></li>
+                <li><a href="../WhiteWashing/index.html">White Washing</a></li>
+                <li><a href="../Services.html">and many more services......</a></li>
+            </ul>
+        </div>
+    </div>  <br>
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="footer-links">
+                <li><a href="../PrivacyPolicy.html">Privacy Policy</a></li>
+                <li class="muted">|</li>
+                <li><a href="../TermsofUse.html">Terms of Use</a></li>
+            </ul>
+        </div>
+        <div class="col-md-5 col-md-offset-4">
+            <div class="footer1">
+                <ul class="footer-links" style="display: block">
+                    <li style="display: inline-block; font-size: 14px;">Spread the word :</li>
+                    <a href="https://www.facebook.com/RamuKaka" target="_blank">
+                        <img src="../Assets/images/facebook.png" width="23" height="23" alt="facebook" /></a>&nbsp;&nbsp;&nbsp;
+                    <a href="https://twitter.com/" target="_blank">
+                        <img width="23" height="23" src="../Assets/images/twitter.png" alt="Twitter" /></a>&nbsp;&nbsp;&nbsp;
+                    <a href="https://plus.google.com/" target="_blank">
+                        <img width="23" height="23" src="../Assets/images/google-plus.png" alt="Google+" />
+                    </a>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-md-4" style="display:none;">
+            <div id="geo"></div>
+
+        </div>
+    </div>
+</div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../Assets/js/bootstrap.min.js"></script>
+
+<script src="../Assets/js/autocomplete-js.js"></script>
+<link rel="stylesheet" href="../Assets/css/custom.css">
+
+<script src="../Assets/js/hack.js"></script>
+<script src="../Assets/js/custom.js"></script>
+<script>
+    $(document).ready(function(){
+
+        var counter = 2;
+        var counter1 = 2;
+        $("#addButton").click(function () {
+
+            if(counter>3){
+                alert("Only 3 fields are allowed");
+                return false;
+            }
+
+            var newTextBoxDiv = $(document.createElement('div'))
+                    .attr("id", 'TextBoxDiv' + counter);
+
+            newTextBoxDiv.after().html('<div class="form-group"><label>Email #'+ counter + ' : </label>' +
+                    '<input type="email" class="form-control" name="mail' + counter +
+                    '" id="mail' + counter + '" value="" ></div>');
+
+            newTextBoxDiv.appendTo("#TextBoxesGroup");
+            counter++;
+
+        });
+
+        $("#removeButton").click(function () {
+            if(counter==2){
+                alert("No more fields to remove");
+                return false;
+            }
+
+            counter--;
+
+            $("#TextBoxDiv" + counter).remove();
+
+        });
+
+
+        $("#addButton1").click(function () {
+
+            if(counter1>3){
+                alert("Only 3 fields are allowed");
+                return false;
+            }
+
+            var newTextBoxDiv = $(document.createElement('div'))
+                    .attr("id", 'aTextBoxDiv' + counter1);
+
+            newTextBoxDiv.after().html('<div class="form-group"><label>Mobile No #'+ counter1 + ' : </label>' +
+                    '<input type="number" class="form-control" name="mobile' + counter1 +
+                    '" id="mobile' + counter1 + '" value="" ></div>');
+
+            newTextBoxDiv.appendTo("#aTextBoxesGroup");
+            counter1++;
+
+        });
+
+        $("#removeButton1").click(function () {
+            if(counter1==2){
+                alert("No more fields to remove");
+                return false;
+            }
+
+            counter1--;
+
+            $("#aTextBoxDiv" + counter1).remove();
+
+        });
+
+
+    });
+</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-50072457-1', 'ramukaka.com');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+</script>
+
+
+</body>
+</html>

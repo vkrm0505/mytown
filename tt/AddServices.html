@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ramukaka</title>
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet"></link>
+	<link href="css/style.css" rel="stylesheet"></link>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body class="bodybackcolor">
+	<div class="container containerbackcolor" >
+		<div style="padding-top: 5px">
+		   <div class="hidden-xs"> <!-- Header -->
+               <a href="index.html"><img src="images/logo.png" class="logo" /></a>
+                <ul class="nav nav-pills pull-right" style="padding-top: 25px">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="AddServices.html">Services</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+			<hr style="background: #000; border: 0; height: 0.7px" /></div>
+		</div>
+		 <div class="visible-xs"> <!-- Header -->
+             <a href="index.html"><img src="images/logo.png" class="logo" /></a>
+			<ul class="nav nav-pills" style="padding-top: 25px">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="AddServices.html">Services</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+			<hr style="background: #000; border: 0; height: 0.7px" /></div>
+
+		<div class="row">
+
+			 <div class="col-md-10 col-md-offset-1">
+				<h3 class="privacy-header" style="border-top-left-radius: 5px; border-top-right-radius: 5px;
+					border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+					<span class="srhntfnd">Service Provider</span>
+				</h3><br/>
+
+			 </div>
+             <form  role="form" action="services.php" method="POST" enctype="multipart/form-data">
+			<div class="col-md-4 col-md-offset-1">
+
+					<div class="form-group">
+						<label for="name">
+							Service Provider Name
+						</label>
+						<input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required>
+					</div>
+
+                <div class="form-group">
+                    <label for="city">
+                        City
+                    </label>
+                    <input type="text" class="form-control" name="city" id="city" placeholder="Enter name of city Eg: Hyderabad" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="landmark">
+                        Landmark
+                    </label>
+                    <input type="text" class="form-control" name="landmark" id="landmark" placeholder="Enter landmark Eg : near Afzalgunj bus stop" required>
+                </div>
+
+
+
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">
+                        Email Id
+                    </label>
+                    <input type="email" class="form-control" name="email" id="exampleInputEmail1" placeholder="Enter email">
+                </div>
+
+				<div class="form-group">
+					<label for="permanentaddress">
+					  Permanent Address
+					</label>
+					<textarea class="form-control" rows="3" name="permanentaddress" id="permanentaddress" placeholder="Enter permanent address" required></textarea>
+				</div>
+
+
+
+				<div class="form-group">
+					<label for="ref1name">
+						Reference 1 Name
+					</label>
+					<input type="text" class="form-control" name="ref1name" id="ref1name" placeholder="Enter name of your 1st reference" >
+				</div>
+
+				<div class="form-group">
+					<label for="ref1phone">
+						Reference 1 Phone
+					</label>
+					<input type="number" class="form-control" name="ref1phone" id="ref1phone" onchange="validatephone(this);" placeholder="Enter phone no of your 1st reference" >
+				</div>
+				<div class="form-group">
+					<label for="ref2rel">
+						Reference 2 Relation
+					</label>
+					<input type="text" class="form-control" name="ref2rel" id="ref2rel" placeholder="Enter relationship with 2nd reference" >
+				</div>
+				<div class="form-group">
+					<label for="pan">
+						Pan No
+					</label>
+					<input type="text" class="form-control" name="pan" id="pan"  placeholder="Enter Pan No " >
+				</div>
+
+				<div class="form-group">
+					<label for="license">
+						License No
+					</label>
+					<input type="text" class="form-control" name="license" id="license"  placeholder="Enter License No " >
+				</div>
+
+
+			</div>
+
+			<div class="col-md-4 col-md-offset-2 ">
+				<div class="form-group">
+					<label for="addservices">
+						Service Type
+					</label>
+					<input type="text" class="form-control" name="services" id="addservices" placeholder="Add multiple services. Eg: Loans, Cabs, Drivers" required>
+				</div>
+                <div class="form-group">
+                    <label for="location">
+                        Location
+                    </label>
+                    <input type="text" class="form-control" name="location" id="location" placeholder="Enter location Eg : Afzalgunj" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">
+                        Mobile No
+                    </label>
+                    <input type="text" class="form-control" name="mobile" id="mobile" onchange="validatephone(this);"
+                           placeholder="Enter 10 digit mobile no " required>
+                </div>
+
+
+				<div class="form-group">
+					<label for="alternate">
+					   Alternate No
+					</label>
+					<input type="text" class="form-control" name="alternate" id="alternate" onchange="validatephone(this);"
+						   placeholder="Enter alternate phone no ">
+				</div>
+
+				<div class="form-group">
+					<label for="presentaddress">
+						Present Address
+					</label>
+					<textarea class="form-control" rows="3" name="presentaddress" id="presentaddress" placeholder="Enter present address"></textarea>
+				</div>
+
+
+
+				<div class="form-group">
+				<label for="ref1rel">
+					Reference 1 Relation
+				</label>
+				<input type="text" class="form-control" name="ref1rel" id="ref1rel" placeholder="Enter relationship with 1st reference">
+			</div>
+				<div class="form-group">
+					<label for="ref2name">
+						Reference 2 Name
+					</label>
+					<input type="text" class="form-control" name="ref2name" id="ref2name" placeholder="Enter name of your 2nd reference">
+				</div>
+
+				<div class="form-group">
+					<label for="ref2phone">
+						Reference 2 Phone
+					</label>
+					<input type="number" class="form-control" name="ref2phone" id="ref2phone" onchange="validatephone(this);" placeholder="Enter phone no of your 2nd reference" >
+				</div>
+
+				<div class="form-group">
+					<label for="aadhaar">
+						Aadhaar No
+					</label>
+					<input type="number" class="form-control" name="aadhaar" id="aadhaar"  placeholder="Enter Aadhaar No " >
+				</div>
+
+				<div class="form-group">
+					<label for="exp">
+						Total Experience (in years)
+					</label>
+					<input type="number" class="form-control" name="exp" id="exp"  placeholder="How many years of experience you have?" >
+				</div>
+
+			</div>
+
+            <div class="row">
+
+		    <div class="col-md-6 col-md-offset-1">
+                <div class="form-group">
+                    <label for="uploadresume">
+                        Upload Resume (Format should be .doc or .docx or .pdf)
+                    </label>
+                    <input type="file" class="form-control" name="uploadresume" id="uploadresume">
+                </div>
+                <div class="form-group">
+                    <label for="uploadpancard">
+                        Upload Pan Card (Format should be .jpg or .png or .gif or .pdf or .jpeg)
+                    </label>
+                    <input type="file" class="form-control" name="uploadpancard" id="uploadpancard">
+                </div>
+                <div class="form-group">
+                    <label for="uploadlicense">
+                        Upload License (Format should be .jpg or .png or .pdf or .jpeg)
+                    </label>
+                    <input type="file" class="form-control" name="uploadlicense" id="uploadlicense">
+                </div>
+                <div class="form-group">
+                    <label for="uploadadhar">
+                        Upload Aadhaar (Format should be .jpg or .png or .pdf or .jpeg)
+                    </label>
+                    <input type="file" class="form-control" name="uploadadhar" id="uploadadhar">
+                </div>
+                <div class="form-group">
+                    <label for="uploadphoto">
+                        Upload Photo (Format should be .jpg or .png or .jpeg)
+                    </label>
+                    <input type="file" class="form-control" name="uploadphoto" id="uploadphoto">
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="checkbox" required>
+                            I agree to the terms and conditions.
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit" class="btn btn-info">
+                        Submit
+                    </button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="reset" class="btn btn-default">
+                        Reset
+                    </button>
+                </div>
+
+            </div>
+            </div>
+
+		   </form>
+
+
+        </div>
+
+		<!-- footer -->
+		<hr style="background: #000; border: 0; height: 0.9px; width: 98%" />
+		<div class="row">
+			<div class="col-md-3">
+				<ul class="footer-links">
+					<li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+					<li class="muted">|</li>
+					<li><a href="#">Disclaimer</a></li>
+				</ul>
+			</div>
+			<div class="col-md-5 col-md-offset-4">
+				<div class="footer1">
+					<ul class="footer-links" style="display: block">
+						<li style="display: inline-block; font-size: 17px;">Spread the word :</li>
+						<a href="https://www.facebook.com/RamuKaka" target="_blank">
+							<img src="images/facebook.png" width="30" height="30" alt="facebook" /></a>&nbsp;&nbsp;&nbsp;
+						<a href="https://twitter.com/" target="_blank">
+							<img width="30" height="30" src="images/twitter.png" alt="Twitter" /></a>&nbsp;&nbsp;&nbsp;
+						<a href="https://plus.google.com/" target="_blank">
+							<img width="30" height="30" src="images/google-plus.png" alt="Google+" />
+						</a>
+					</ul>
+				</div>
+				<br />
+				<br />
+				<br />
+			</div>
+		</div>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!--  <script src="sliderengine/jquery.js"></script>-->
+		<!-- <script src="js/autocomplete-js.js"></script>-->
+		<script src="js/autocomplete-js.js"></script>
+		<link rel="stylesheet" href="css/custom.css">
+	<!--    <script>
+			$(document).ready(function () {
+				$('#hideloan').hide();
+				$('#hideinsurance').hide();
+				$('#hideacshift').hide();
+			});
+			$('#services').on('change keyup paste mouseup mousedown keydown input', function () {
+
+				var servicesText = $('#services').val();
+				if (servicesText === "Loans") {
+					$('#hideloan').show();
+				}
+				else if (servicesText === "Insurance policy") {
+					$('#hideinsurance').show();
+				}
+				else if (servicesText === "A/c shifting") {
+					$('#hideacshift').show();
+				} else {
+					$('#hideloan').hide();
+					$('#hideinsurance').hide();
+					$('#hideacshift').hide();
+				}
+
+			});
+
+
+		</script>-->
+		<!--   <script type="text/javascript">
+			   $.noConflict();
+			   jQuery(document).ready(function ($) {
+				   // Code that uses jQuery's $ can follow here.
+			   });
+			   // Code that uses other library's $ can follow here.
+</script>-->
+		<script src="js/hack.js"></script>
+		  <script src="js/custom.js"></script>
+
+
+</body>
+</html>

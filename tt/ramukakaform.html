@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ramukaka</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"></link>
+    <link href="css/style.css" rel="stylesheet"></link>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="bodybackcolor">
+    <div class="container containerbackcolor" >
+        <div style="padding-top: 5px">
+           <div class="hidden-xs"> <!-- Header -->
+          <a href="ramukakaform.html"><img src="images/logo.png" class="logo" /></a>
+            <ul class="nav nav-pills pull-right" style="padding-top: 25px">
+                <li class="active"><a href="ramukakaform.html">Home</a></li>
+                <li><a href="AddServices.html">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <hr style="background: #000; border: 0; height: 0.7px" /></div>
+        </div>
+         <div class="visible-xs"> <!-- Header -->
+             <a href="ramukakaform.html"><img src="images/logo.png" class="logo" /></a>
+            <ul class="nav nav-pills" style="padding-top: 25px">
+                <li class="active"><a href="ramukakaform.html">Home</a></li>
+                <li><a href="AddServices.html">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <hr style="background: #000; border: 0; height: 0.7px" /></div>
+      
+      
+        <div class="row">
+            <div class="hidden-xs"  style="float: right;display:none">
+                <ul class="footer-links" style="display: block">
+                    <li style="display: inline-block; font-size: 17px;">Download our app :</li>
+                    <a href="https://play.google.com/store/apps" target="_blank">
+                        <img src="images/android.png" width="30" height="30" alt="android" /></a>&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.apple.com/itunes/" target="_blank">
+                        <img width="30" height="30" src="images/apple.png" alt="apple" /></a>&nbsp;&nbsp;&nbsp;
+                    <a href="http://www.windowsphone.com/en-us/store/featured-apps" target="_blank">
+                        <img width="30" height="30" src="images/windows8.png" alt="windows8" />
+                    </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                </ul>
+            </div>
+            
+             <div class="hidden-xs"  style="float: right;">
+                <ul class="footer-links" style="display: block">
+                    <li style="display: inline-block; font-size: 17px;">If you are a <strong>Service Provider</strong>,please <a href="AddServices.html">click here</a>&nbsp;&nbsp;&nbsp;</li>
+                </ul>
+            </div>
+
+           
+            <!-- Form -->
+            <div class="mobile-container">
+                <img class="hidden-xs phone-img" id="image" src="images/immersive.jpg" />
+                <div class="col-md-2 col-xs-10" id="text">
+                    <form role="form" action="insert.php" method="POST">
+                    <div class="form-group">
+                        <label for="city">
+                            City
+                        </label>
+                        <input type="text" class="form-control" name="city" id="city" placeholder="Enter name of city">
+                    </div>
+                    <div class="form-group">
+                        <label for="location">
+                            Location
+                        </label>
+                        <input type="text" class="form-control" name="location" id="location" placeholder="Enter location">
+                    </div>
+                    <div class="form-group">
+                        <label for="services">
+                           Type of Service
+                        </label>
+                        <input type="text" class="form-control" name="services" id="services" placeholder="Enter type of service you need" />
+                    </div>
+                 <!--   <div id="hideloan">
+                        <div class="form-group">
+                            <label for="loanType">
+                                Loan Type
+                            </label>
+                            <input type="text" class="form-control" name="loanType" id="loanType" placeholder="Enter type of loan you need ">
+                        </div>
+                        <div class="form-group">
+                            <label for="loanProvider">
+                                Loan Provider
+                            </label>
+                            <input type="text" class="form-control" name="loanProvider" id="loanProvider" placeholder="Enter loan provider">
+                        </div>
+                    </div>
+                    <div id="hideinsurance">
+                        <div class="form-group">
+                            <label for="insuranceType">
+                                Insurance Type
+                            </label>
+                            <input type="text" class="form-control" name="insuranceType" id="insuranceType" placeholder="Enter type of insurance you need ">
+                        </div>
+                        <div class="form-group">
+                            <label for="insuranceProvider">
+                                Insurance Provider
+                            </label>
+                            <input type="text" class="form-control" name="insuranceProvider" id="insuranceProvider"
+                                placeholder="Enter loan provider">
+                        </div>
+                    </div>
+                    <div id="hideacshift">
+                        <div class="form-group">
+                            <label for="acno">
+                                No of A/C's
+                            </label>
+                            <input type="text" class="form-control" name="acno" id="acno" placeholder="How many A/C?">
+                        </div>
+                        <div class="form-group">
+                            <label for="shiftLocation">
+                                Shifting Location
+                            </label>
+                            <input type="text" class="form-control" name="shiftLocation" id="shiftLocation" placeholder="Provide shifting location">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="issue">
+                            Issue Details
+                        </label>
+                        <input type="text" class="form-control" name="issue" id="issue" placeholder="Give Issue Details">
+                    </div>
+                    <div class="form-group">
+                        <label for="charge">
+                            Service Charge
+                        </label>
+                        <input type="text" class="form-control" name="charge" id="charge" placeholder="Service Charge">
+                    </div>
+                    <div class="form-group">
+                        <label for="datepicker">
+                            Appointment Date
+                        </label>
+                        <input type="text" class="form-control" name="date" id="datepicker" placeholder="Enter Date">
+                    </div>
+                    <div class="form-group">
+                        <label for="time">
+                            Appountment Time
+                        </label>
+                        <input type="time" class="form-control" id="time" name="time" onchange="validateHhMm(this);"
+                            placeholder="Enter time in HH:MM format">
+                    </div>-->
+                    <div class="form-group">
+                        <label for="exampleInputName">
+                            Name
+                        </label>
+                        <input type="text" class="form-control" name="name" id="exampleInputName" placeholder="Enter Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPhone">
+                            Phone No
+                        </label>
+                        <input type="text" class="form-control" name="phone" id="exampleInputPhone" onchange="validatephone(this);"
+                            placeholder="Enter Phone no with STD code " required>
+                    </div>
+                    <!-- <div class="form-group">
+                                 <label for="exampleInputMobile">Mobile No</label>
+                                 <input type="text" class="form-control" id="exampleInputMobile" placeholder="Enter Mobile No">
+
+                             </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">
+                                    Email Id
+                                </label>
+                                <input type="email" class="form-control" name="email" id="exampleInputEmail1" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">
+                                    Address
+                                </label>
+
+                                <textarea class="form-control" rows="3" name="address" placeholder="Enter complete address"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="landmark">
+                                    Landmark
+                                </label>
+                                <input type="text" class="form-control" name="landmarks" id="landmark" placeholder="Enter landmark place">
+                            </div>
+                            <div class="form-group">
+                                <label for="remarks">
+                                    Additional Remarks
+                                </label>
+                                <textarea class="form-control" id="remarks" name="remarks" rows="3" placeholder="Enter remarks if any !"></textarea>
+                            </div>-->
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="checkbox" required>
+                                I agree to the terms and conditions.
+                            </label>
+                        </div>
+                    </div>
+                    <div align="center">
+                        <button type="submit" class="btn btn-info">
+                            Submit
+                        </button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="reset" class="btn btn-default">
+                            Reset
+                        </button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-1 col-xs-1">
+            </div>
+            <div class="col-md-8 col-xs-12">
+                <br />
+                <br />
+                <!-- Slider -->
+                <div class="slidercss" >
+                    <!-- Insert to your webpage where you want to display the slider -->
+                  <div id="amazingslider-1" style="display:block;position:relative;margin:0px auto 32px;">
+        <ul class="amazingslider-slides" style="display:none;">
+            <li><img src="images/downloadfile-10.jpeg" /></li>
+            <li><img src="images/downloadfile-6.jpeg" /></li>
+            <li><img src="images/downloadfile-7.jpeg" /></li>
+            <li><img src="images/downloadfile-8.jpeg" /></li>
+            <li><img src="images/downloadfile-9.jpeg" /></li>
+
+            <li><img src="images/Ramukaka Concept-06.jpg" /></li>
+            <li><img src="images/Ramukaka Concept-07.jpg" /></li>
+            <li><img src="images/Ramukaka Concept-08.jpg" /></li>
+           
+            <li><img src="images/Ramukaka Concept-09 B.jpg" /></li>
+            <li><img src="images/Ramukaka Concept-11.jpg" /></li>
+        </ul>
+        <ul class="amazingslider-thumbnails" style="display:none;">
+            <li><img src="images/downloadfile-10-tn.jpeg" /></li>
+            <li><img src="images/downloadfile-6-tn.jpeg" /></li>
+            <li><img src="images/downloadfile-7-tn.jpeg" /></li>
+            <li><img src="images/downloadfile-8-tn.jpeg" /></li>
+            <li><img src="images/downloadfile-9-tn.jpeg" /></li>
+
+            <li><img src="images/Ramukaka Concept-06-tn.jpg" /></li>
+            <li><img src="images/Ramukaka Concept-07-tn.jpg" /></li>
+            <li><img src="images/Ramukaka Concept-08-tn.jpg" /></li>
+           
+            <li><img src="images/Ramukaka Concept-09 B-tn.jpg" /></li>
+            <li><img src="images/Ramukaka Concept-11-tn.jpg" /></li>
+        </ul>
+        <div class="amazingslider-engine" style="display:none;"><a href="http://amazingslider.com">jQuery Slideshow</a></div>
+    </div>
+                    <!-- End of body section HTML codes -->
+                </div>
+            </div>
+        </div>
+       
+        
+        <!-- footer -->
+        <hr style="background: #000; border: 0; height: 0.9px; width: 98%" />
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="footer-links">
+                    <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+                    <li class="muted">|</li>
+                    <li><a href="#">Disclaimer</a></li>
+                </ul>
+            </div>
+            <div class="col-md-5 col-md-offset-4">
+                <div class="footer1">
+                    <ul class="footer-links" style="display: block">
+                        <li style="display: inline-block; font-size: 17px;">Spread the word :</li>
+                        <a href="https://www.facebook.com/RamuKaka" target="_blank">
+                            <img src="images/facebook.png" width="30" height="30" alt="facebook" /></a>&nbsp;&nbsp;&nbsp;
+                        <a href="https://twitter.com/" target="_blank">
+                            <img width="30" height="30" src="images/twitter.png" alt="Twitter" /></a>&nbsp;&nbsp;&nbsp;
+                        <a href="https://plus.google.com/" target="_blank">
+                            <img width="30" height="30" src="images/google-plus.png" alt="Google+" />
+                        </a>
+                    </ul>
+                </div>
+                <br />
+                <br />
+                <br />
+            </div>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!--  <script src="sliderengine/jquery.js"></script>-->
+        <!-- <script src="js/autocomplete-js.js"></script>-->
+        <script src="js/autocomplete-js.js"></script>
+        <link rel="stylesheet" href="css/custom.css">
+    <!--    <script>
+            $(document).ready(function () {
+                $('#hideloan').hide();
+                $('#hideinsurance').hide();
+                $('#hideacshift').hide();
+            });
+            $('#services').on('change keyup paste mouseup mousedown keydown input', function () {
+
+                var servicesText = $('#services').val();
+                if (servicesText === "Loans") {
+                    $('#hideloan').show();
+                }
+                else if (servicesText === "Insurance policy") {
+                    $('#hideinsurance').show();
+                }
+                else if (servicesText === "A/c shifting") {
+                    $('#hideacshift').show();
+                } else {
+                    $('#hideloan').hide();
+                    $('#hideinsurance').hide();
+                    $('#hideacshift').hide();
+                }
+
+            });
+
+           
+        </script>-->
+       
+       
+     
+        <!--   <script type="text/javascript">
+               $.noConflict();
+               jQuery(document).ready(function ($) {
+                   // Code that uses jQuery's $ can follow here.
+               });
+               // Code that uses other library's $ can follow here.
+</script>-->
+        <script src="js/hack.js"></script>
+          <script src="js/custom.js"></script>
+        <script src="sliderengine/amazingslider.js"></script>
+        <script src="sliderengine/initslider-1.js"></script>
+    </div>
+</body>
+</html>

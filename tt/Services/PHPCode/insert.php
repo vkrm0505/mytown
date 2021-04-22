@@ -1,0 +1,1 @@
+<script>alert('Fields cannot be empty.');window.location='../index.html';</script>

@@ -1,0 +1,15 @@
+<html>
+<head>
+<title> Non-Seamless-kit</title>
+</head>
+<body>
+<center>
+
+
+<form method="post" name="redirect" action="http://secure.ccavenue.com/transaction/transaction.do?command=initiateTransaction">
+<input type=hidden name=encRequest value=7779238ccec8f12ceef100d843c64b9a6882835270477f6047c6aec1165b4ce1bf15787aa7a08c1171d982f80bf901b278ed2f525aeca5d3b87bbf1ba3c711794b94750367406f7e0e2da789bda383df3a3ea7124bc6accb0b13035da5abec5507a236bb4b3164aac012b2822c3375034b00c9c402b2e9a169f54c0f985f81d9d57c932d99725e9b0666d5d57b0b13e0db23368f84a923e035c1bbf259fcf1b2c9a9acdaa1e5241525c19152a97479522c94e80eb690f6cf0048c4606234c74332af22cc646b475d9d20d8447922854259059c8624680263a12b9f08f62ae93fc55510411fcb5d7657d45d6c7b6acfe3e27b9b45b12c4b463453b2dc3712b64bf921869582e4a27291597400c913ef7139593aa18702286bba65fcbf4eea93da218fbe22278f0207020c35f4379a8e99d8ac663e34496fa0a0702ee7f02c1201c014504faca35d75b60beab8d79893f34d3c47b45e5c99db9f9aab3e2f8d978f9f9a1fad91ff1aa0cda81d55a658f4d3><input type=hidden name=access_code value=AVGH02BH43CL28HGLC></form>
+</center>
+<script language='javascript'>document.redirect.submit();</script>
+</body>
+</html>
+
